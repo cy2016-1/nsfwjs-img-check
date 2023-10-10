@@ -33,7 +33,7 @@ node 版本：v16.11.1
 
 ```
 请求方式: POST
-https://luckycola.com.cn/tools/checkImg
+http://localhost:3006/checkImg
 
 ```
 
