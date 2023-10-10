@@ -1,7 +1,7 @@
-# nsfwjs-img-check
+# imgCheckProject
 
 #### Description
-一款基于nsfwjs实现的node版本的图片鉴黄算法服务程序
+图片鉴黄
 
 #### Software Architecture
 Software architecture description
