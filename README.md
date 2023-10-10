@@ -1,37 +1,48 @@
-# imgCheckProject
+# nsfwjs-img-check
 
 #### 介绍
-图片鉴黄
+一款基于nsfwjs实现的node版本的图片鉴黄服务
 
-#### 软件架构
-软件架构说明
+在线体验案例：
+[图片鉴黄服务](https://luckycola.com.cn/public/dist/#/checkImg)
+
+#### 版本说明
+node 版本：v16.11.1
 
 
 #### 安装教程
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1. 下载该程序库
+2.  执行下面命令，下载依赖
+   ```js
+    yarn
+   ```
+3. 执行下面命令，启动服务
+ ```js
+    yarn start
+   ```
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+1.  服务启动成功后，控制台会输出以下提示
+   ```js
+    图片鉴黄服务器启动成功！port：3006
+   ```
+2.  服务启动成功后，就可以通过api使用服务啦
 
 
-#### 特技
+```
+请求方式: POST
+https://luckycola.com.cn/tools/checkImg
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+```
+
+**api参数说明：**
+| 序号 | 参数 | 是否必须|说明 |
+|--|--|--|--|
+| 1 |file  |是 | 需要鉴别的图片资源(png、jpg、jpeg、png格式),注意:该接口请求参数是**multipart/form-data**格式|
+
+
+
+#### 在线官网
+[http(s): //luckycola.com.cn](http://luckycola.com.cn)
